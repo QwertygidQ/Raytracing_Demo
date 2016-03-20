@@ -7,6 +7,11 @@
 		x = y = z = 0;
 	}
 
+	Vector3::Vector3(const float arg)
+	{
+		x = y = z = arg;
+	}
+
 	Vector3::Vector3(const float xArg, const float yArg, const float zArg)
 	{
 		x = xArg;
@@ -27,7 +32,7 @@
 		return *this;
 	}
 
-	float Vector3::dot(Vector3& vector) const
+	float Vector3::dot(const Vector3& vector) const
 	{
 		return x * vector.x + y * vector.y + z * vector.z;
 	}
