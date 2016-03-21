@@ -15,7 +15,6 @@ void render(const std::vector<Sphere>& spheres);
 
 int main(int argc, char* args[])
 {
-	srand48(13);
 	std::vector<Sphere> spheres;
 	spheres.push_back(Sphere(Vector3( 0.0, -10004, -20), 10000, Vector3(0.20, 0.20, 0.20), 0, 0.0));
 	spheres.push_back(Sphere(Vector3( 0.0, 0, -20), 4, Vector3(1.00, 0.32, 0.36), 1, 0.5));
