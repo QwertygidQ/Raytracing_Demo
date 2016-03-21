@@ -29,7 +29,7 @@ int main(int argc, char* args[])
 
 float mix(const float a, const float b, const float mixRatio)
 {
-	return a * mixRatio + b * (1 - mixRatio);
+	return b * mixRatio + a * (1 - mixRatio);
 }
 
 Vector3 trace(const Vector3& rayStart, const Vector3& rayDir, const std::vector<Sphere>& spheres, const int depth)
